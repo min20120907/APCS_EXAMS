@@ -32,7 +32,7 @@ public class Exam4 {
         if(as+bs==cs){
             System.out.println(input);
             System.out.println("Right");
-        }else if(as+bs!=c&&sas+bs<cs){
+        }else if(as+bs!=c&&as+bs<cs){
             System.out.println(input);
             System.out.println("Obtuse");
         }else if(as+bs!=c&&as+bs>cs){

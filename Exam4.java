@@ -26,16 +26,16 @@ public class Exam4 {
         int a = NumGroup[0];
         int b = NumGroup[1];
         int c = NumGroup[2];
-        int as = NumGroup[0];
+        int as = NumGroup[0]*NumGroup[0];
         int bs = NumGroup[1]*NumGroup[1];
         int cs = NumGroup[2]*NumGroup[2];
         if(as+bs==cs){
             System.out.println(input);
             System.out.println("Right");
-        }else if(as+bs<cs){
+        }else if(as+bs!=c&&sas+bs<cs){
             System.out.println(input);
             System.out.println("Obtuse");
-        }else if(as+bs>cs){
+        }else if(as+bs!=c&&as+bs>cs){
             System.out.println(input);
             System.out.println("Acute");
         }else if(a+b<=c){

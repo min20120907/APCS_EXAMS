@@ -1,3 +1,10 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package exam5;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -31,14 +38,16 @@ public class Exam5 {
         int[] NumGroup =StringArrToIntArr(group);
         list.add(NumGroup[0]);
         list.add(NumGroup[1]);
+        list1.add(NumGroup[0]);
+        list1.add(NumGroup[1]);
         }
-        int size =list1.size();
+        int size =list.toArray().length;
        int covered_Area=(Collections.max(list)-Collections.min(list));
         Arrays.sort(list.toArray());
         int intil_Sum=0;
-        for(int j=0;j<size;j++){
+        for(int j=0;j<size-1;j++){
             
-            if(list.get(j+1)-list.get(j)==0){
+            if(list.get(j+1)-list.get(j)<=covered_Area){
             }
             else{
             covered_Area-=(list.get(j+1)-list.get(j));

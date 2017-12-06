@@ -19,12 +19,20 @@ public class Scanner_test {
         for(int x = 1 ; x <= num1; x+=1){
             wheel[x-1]=x;
         }
-        for(int x = 1 ; x <= num1; x+=num2){
-            
-            wheel = remove(wheel, x);
+
+int times=0;
+        for( int y = 1 ; y <= num1; y+=num2){
+            if(times<num3){
+            wheel = remove(wheel, y);
             
         }
-        System.out.println(wheel.length);
+        times++;
+        }
+        
+        
+        System.out.println(wheel[1]);
+            
+     
     }
   public static int[] remove(int[] numbers, int target) {
         int count = 0;
